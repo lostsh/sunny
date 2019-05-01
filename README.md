@@ -25,13 +25,13 @@ On the website you will acces to the data frome the pannel
 # Physical part
 The phisical part is composed of several parts too :
 
-## Arduino, **[code right hire](https://github.com/lostsh/Solar-Tracker-Sunny)** who control the position of the pannel with servo motors (or stepper motors idk the solution we chose actually the work is in progress)
+##### Arduino, **[code right hire](https://github.com/lostsh/Solar-Tracker-Sunny)** who control the position of the pannel with servo motors (or stepper motors idk the solution we chose actually the work is in progress)
 
-## Micro computer card who can :
+##### Micro computer card who can :
 - hosts the main page of the website to display informations
 - only send data on the website hosted on a server
 - recive requests for test, debug or make some change on the params of the Tracker
 - send aletrs in case of unusual things
 
-## Structure in cardboard to be lighter because the servomotors are only 9g ... (so painful)
+##### Structure in cardboard to be lighter because the servomotors are only 9g ... (so painful)
 
