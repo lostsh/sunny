@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/index.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/barre.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/design.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/animFondHeadHorloge.css"/>
+
 
 </head>
 <body>
@@ -31,10 +33,10 @@
 	<article class="projet">
             <!--- Bouton 1 qui ouvre une fenêtre modale-->
     <div class="bouton">
-    <section class="click">    
+    <section class="click">
       <div id="methode1">
         <div class="popup_block">
-          <a class="fermer" href="#noWhere"><img alt="Fermer" title="Fermer la fenêtre" class="bouton_fermer" src="assets/img/close.png"></a>   
+          <a class="fermer" href="#noWhere"><img alt="Fermer" title="Fermer la fenêtre" class="bouton_fermer" src="assets/img/close.png"></a>
           <p class="pop">
            	<h2>Méthode photorésistances</h2>
         	<article>
@@ -59,7 +61,7 @@
 			<h1>Conclusion</h1>
 			<p>Ici, la conclusion de la méthode.</p>
 		</article>
-          </p>          
+          </p>
         </div>
       </div>
     </div>
@@ -67,10 +69,10 @@
  <article class="projet">
             <!--- Bouton 2 qui ouvre une fenêtre modale-->
     <div class="bouton">
-    <section class="click">    
+    <section class="click">
       <div id="methode1">
         <div class="popup_block">
-          <a class="fermer" href="#noWhere"><img alt="Fermer" title="Fermer la fenêtre" class="bouton_fermer" src="assets/img/close.png"></a>   
+          <a class="fermer" href="#noWhere"><img alt="Fermer" title="Fermer la fenêtre" class="bouton_fermer" src="assets/img/close.png"></a>
           <p class="pop">
            	<h2>Méthode avec équation de la trajectoire du Soleil</h2>
         	<article>
@@ -95,7 +97,7 @@
 			<h1>Conclusion</h1>
 			<p>Ici, la conclusion de la méthode.</p>
 		</article>
-          </p>          
+          </p>
         </div>
       </div>
     </div>
@@ -103,10 +105,10 @@
  <article class="projet">
             <!--- Bouton 3 qui ouvre une fenêtre modale-->
     <div class="bouton">
-    <section class="click">    
+    <section class="click">
       <div id="methode1">
         <div class="popup_block">
-          <a class="fermer" href="#noWhere"><img alt="Fermer" title="Fermer la fenêtre" class="bouton_fermer" src="assets/img/close.png"></a>   
+          <a class="fermer" href="#noWhere"><img alt="Fermer" title="Fermer la fenêtre" class="bouton_fermer" src="assets/img/close.png"></a>
           <p class="pop">
            	<h2>Méthode avec une caméra</h2>
         	<article>
@@ -131,7 +133,7 @@
 			<h1>Conclusion</h1>
 			<p>Ici, la conclusion de la méthode.</p>
 		</article>
-          </p>          
+          </p>
         </div>
       </div>
     </div>
@@ -139,16 +141,16 @@
 
 
 	</body>
-<footer>	
-	<div>	
+<footer>
+	<div>
 		<div class="text">
-		    TS4 - ISN © 2018-2019 
+		    TS4 - ISN © 2018-2019
 	    </div>
 	    <div class= "text">
 	    	|
 	    </div>
 		<div class= "text">
-	    	Léa JEAN 
+	    	Léa JEAN
 	    </div>
 	    <div class= "text">
 	    	|
@@ -198,27 +200,27 @@
 var myDate = new Date();
 var hours = myDate.getHours();
 
-if (6 <= hours && hours < 10) 
+if (6 <= hours && hours < 10)
 {
   document.body.className = 'matin';
 }
-else if (10 <= hours && hours < 12) 
+else if (10 <= hours && hours < 12)
 {
  document.body.className = 'mimatin';
 }
-else if (12 <= hours && hours < 15) 
+else if (12 <= hours && hours < 15)
 {
  document.body.className = 'midi';
 }
-else if (15 <= hours || hours < 18) 
+else if (15 <= hours || hours < 18)
 {
  document.body.className = 'aprem';
 }
-else if (18 <= hours || hours < 20) 
+else if (18 <= hours || hours < 20)
 {
  document.body.className = 'soir';
 }
-else if (20 >=  hours || hours > 6) 
+else if (20 >=  hours || hours > 6)
 {
  document.body.className = 'nuit';
 }

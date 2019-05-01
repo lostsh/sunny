@@ -1,5 +1,6 @@
 /*
 *Syle for the head and for the background who change during the day
+*the js change the class of a div and hire we have the bkgroud od the diffrerents clases
 *check github.com/lostsh/sunny for more infomations
 */
 #header{
@@ -32,7 +33,7 @@
 #horloge{
     font-family: 'modern';
     font-size: 2em;
-    position: fixed;
+    position: absolute;
     top: 235px;
     transform: translateX(-50%);
     left: 50%;
@@ -65,4 +66,5 @@
 @font-face {
     font-family: 'bugg';
     src: url("../Fonts/PositiveSystem.otf");
-}*/
+}
+*/
