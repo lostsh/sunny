@@ -1,5 +1,5 @@
 # Solar Tracker
-#### A solar panel who follow the sun
+#### A solar panel who follow the sun :high_brightness: :earth_africa:
 
 *sunny is the name of the sensor composed of four photoresistors*
 
@@ -18,8 +18,8 @@ This project is composed of sevral parts ;
 On the website you will acces to the data frome the pannel
 - state
 - voltage received
-- position
-- statistics
+- position :hourglass_flowing_sand:
+- statistics :mobile_phone_off:
 - and more ...
 
 # Physical part
@@ -33,5 +33,5 @@ The phisical part is composed of several parts too :
 - recive requests for test, debug or make some change on the params of the Tracker
 - send aletrs in case of unusual things
 
-##### Structure in cardboard to be lighter because the servomotors are only 9g ... (so painful)
+##### Structure in cardboard to be lighter because the servomotors are only 9g ... (so painful) :cry:
 
