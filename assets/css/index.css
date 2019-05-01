@@ -25,9 +25,9 @@
 .headNuit{
     background-image: url("../images/head/20.png");
 }
-#header{
-    font-family: 'bugg';
-    font-size: 2em;
+#horloge{
+    font-family: 'modern';
+    /*font-size: 2em;*/
 }
 
 .isn {
