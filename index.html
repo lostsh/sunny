@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset='utf-8'>
+	<title>Tracker Solaire</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/barre.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/design.css"/>
+
+</head>
+<body>
+	<div id="header">
+		<!--<div id="horloge"></div>-->
+	</div>
+
+	<!---MENU -->
+	<center>
+	<ul class="menu">
+		<li class="menuContent"><a href="#presentation">Présentation</a></li>
+		<li class="menuContent"><a href="page1.html">Expérience</a></li>
+		<li class="menuContent"><a href="page2.html">Comparaison</a></li>
+		<li class="menuContent"><a href="page3.html">Synthèse</a></li>
+	</ul>
+	</center>
+
+	<article class="isn" id="presentation"><div id="horloge"></div>
+		<p>Nous vous souhaitons la bienvenue sur notre site consacré à notre projet d'<abbr title="Informatique et sciences du numérique">ISN</abbr> !<br/>
+		Ce projet est la création d'un <b>tracker solaire</b>. Il a été réalisé par Léa JEAN, Adélaïde LOUIS et Yohann VERNHES, tous les trois élèves de TS4.</p>
+	</article>
+
+	<article class="presentation">
+		<center><h1>Présentation du projet</h1>
+		<h2><u>Pourquoi ce projet ?</u></h2></center>
+		<p>Nous avons choisi de réaliser un tracker solaire car c'est un projet idéal pour utiliser nos compétences acquises en Sciences de l'Ingénieur et celle en informatique. De plus faire un tracker solaire nous oblige à utiliser un arduino et donc d'apprendre un nouveau langage de programmation qui se rapproche du C. Nous aimons aussi les défis: réaliser un tracker solaire est loin d'être quelque chose de simple ! Mais ça nous le verrons plus tard...</p>
+		<center><h2><u>Analyse du besoin</u></h2></center>
+		<p>
+		Pour commencer nous avons réaliser une bête à corne - outil très utile dans les <b>Sciences de l'Ingénieur</b> - qui permet de savoir dans quel but l'objet est fabriqué.
+		<center><img src="assets/images/bac.jpg" title="Bête à corne du système" alt="bête à corne"></center><br/>
+
+		<br/>
+		Ensuite, nous nous sommes intéressés à la trajectoire du soleil avant de réfléchir à des solutions techniques.
+
+		Pour finir, nous avons pu dégager trois idées de méthodes pour réaliser le tracker.
+		<ul>
+			<li> La première est de faire fonctionner le tracker en utilisant les équations de la trajectoire du Soleil.</li>
+			<li> La seconde est d'utiliser des photorésistances.</li>
+			<li> La dernière est d'utiliser une caméra.</li>
+		</ul>
+		Nous détaillons plus en détails ces méthodes sur la page <a href="page1.html">"Expérience".</a>
+
+		Nous avons commencé ensemble ce projet en réalisant
+
+		</p>
+	</article>
+<!-- Reprendre texte de la diapo -->
+
+
+</body>
+<footer>
+	<div>
+		<div class="text">
+		    TS4 - ISN © 2018-2019
+	    </div>
+	    <div class= "text">
+	    	|
+	    </div>
+		<div class= "text">
+	    	Léa JEAN
+	    </div>
+	    <div class= "text">
+	    	|
+	    </div>
+	    <div class= "text">
+	    	<a href="https://lanryu.000webhostapp.com/">Adélaïde LOUIS</a>
+	    </div>
+	    <div class= "text">
+	    	|
+	    </div>
+	    <div class= "text">
+	    	<a href="https://lost-sh.000webhostapp.com/">Yohann VERNHES</a>
+	    </div>
+	    <div class= "text">
+	    	|
+	    </div>
+	    <div class= "text">
+	    	 <a style="color: black;text-decoration: none;" href="https://lyceeduruy.fr/">Lycée Victor Duruy</a>
+	    </div>
+	    <div class= "accueil">
+	    	<a style="color: black;text-decoration: none;" href="index.html">ACCUEIL</a>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript">
+	//Horloge
+	function horloge(){ //Horloge dans le header
+		const champAfficheur = document.getElementById('horloge');
+		var touteLaDate = Date();//on recupere toute les info sur la date et l'heure
+		var HeureMinutesSecondes = '';//variable string qui contiend la date et l'heure
+		for(var i=16; i<=23; i++){
+			HeureMinutesSecondes+=touteLaDate[i];//on trie pour recupere que les heure min sec
+		}
+		champAfficheur.innerHTML='<p><b>'+HeureMinutesSecondes+'</b></p>';
+
+		setTimeout("horloge()", 1000);//rafraichir toutes les secondes
+	}
+	horloge();
+
+	//Fond qui change selon l'heure qui fonctionne <!--pas--> trop XD
+
+	function changerFond(){
+		const elementBody = document.body;
+		const elementHead = document.getElementById('header');
+		var heure = '';
+		heure = Date()[16]+Date()[17];//on recupere seulement les deux chiffres de heure
+		//heure = Date()[22]+Date()[23];//on recupere seulement les secondes pour tester
+		setTimeout("changerFond()", 120000);
+		//la function est actualise toutes les deux minutes
+		//donc au maximum on aura deux minutes de retard sur les tranasiosn
+
+		//utilisation preferentielle du if a la place du switch pour des raisons de comparaisons evidentes
+		if( 6 <= heure && heure < 10 ){
+			elementBody.className = 'matin';
+			elementHead.className = 'headMatin';
+		}else if ( 10 <= heure && heure < 12 ){
+			elementBody.className = 'mimatin';
+			elementHead.className = 'headMiMatin';
+		}else if ( 12 <= heure && heure < 15 ){
+			elementBody.className = 'midi';
+			elementHead.className = 'headMidi';
+		}else if ( 15 <= heure && heure < 18 ){
+			elementBody.className = 'aprem';
+			elementHead.className = 'headAprem';
+		}else if ( 18 <= heure && heure < 20 ){
+			elementBody.className = 'soir';
+			elementHead.className = 'headSoir';
+		}else if ( 20 >= heure || heure > 6 ){
+			elementBody.className = 'nuit';
+			elementHead.className = 'headNuit';
+		}
+	}
+	changerFond();
+</script>
+</html>
