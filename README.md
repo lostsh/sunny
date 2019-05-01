@@ -1,22 +1,22 @@
-#Solar Tracker
+# Solar Tracker
 A solar panel who follow the sun
 
 'sunny is the name of the sensor composed of four photoresistors'
 
-#Project
+# Project
 This project is composed of sevral parts ;
 -the website
 -the phisical system
 
-#Website
-On the website you will acces to the data frome the pannel
+# Website
+On the website you will acces to the data frome the pannel\n
 -state
 -voltage received
 -position
 -statistics
 -and more ...
 
-#Physical part
+# Physical part
 The phisical part is composed of several parts too :
 '''
 Arduino, who control the position of the pannel with servo motors (or stepper motors idk the solution we chose actually the work is in progress)
