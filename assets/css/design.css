@@ -31,24 +31,6 @@ h1{
 
 /*CHANGEMENT FOND <!--pas--> beau*/
 
-.matin{
-    background-image: url("../images/fond/6.jpg");
-}
-.mimatin{
-    background-image: url("../images/fond/10.jpg");
-}
-.midi{
-    background-image: url("../images/fond/12.jpg");
-}
-.aprem{
-    background-image: url("../images/fond/15.jpg");
-}
-.soir{
-    background-image: url("../images/fond/10.jpg");
-}
-.nuit{
-    background-image: url("../images/fond/20.jpg");
-}
 /*
 .matin{
     background-image: url("../images/fond/6.jpg");
@@ -120,18 +102,18 @@ h1{
 }
  */
 
-#methode1{ 
+#methode1{
   background-color: rgba(0, 0, 0, 0.5);
-  bottom:0; 
+  bottom:0;
   display: none;
   float: left;
   left:0;
   overflow-y: scroll;
   position: fixed;
-  right:0; 
-  top:0; 
+  right:0;
+  top:0;
   z-index: 1000;
-  
+
 }
 
 #methode1:target{
@@ -145,7 +127,7 @@ h1{
   border-radius: 10px;
   box-shadow: 0px 0px 40px #B3CAD3;
   margin: 10% auto;
-  padding: 20px; 
+  padding: 20px;
   position: relative;
   text-align: justify;
   width: 80%;
@@ -157,18 +139,18 @@ img.bouton_fermer {
 }
 
 
-#selfe, #hack, #sol, #enigma, #inclinator{ 
+#selfe, #hack, #sol, #enigma, #inclinator{
   background-color: rgba(0, 0, 0, 0.5);
-  bottom:0; 
+  bottom:0;
   display: none;
   float: left;
   left:0;
   overflow-y: scroll;
   position: fixed;
-  right:0; 
-  top:0; 
+  right:0;
+  top:0;
   z-index: 1000;
-  
+
 }
 
 #selfe:target, #hack:target, #sol:target, #enigma:target, #inclinator:target{
@@ -181,7 +163,7 @@ img.bouton_fermer {
   border-radius: 10px;
   box-shadow: 0px 0px 40px #B3CAD3;
   margin: 10% auto;
-  padding: 20px; 
+  padding: 20px;
   position: relative;
   text-align: justify;
   width: 80%;

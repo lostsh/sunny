@@ -1,35 +1,3 @@
-#header{
-    /*background-image: url("../images/head/15.png");*/
-    background-position: bottom;
-    background-repeat: no-repeat;
-    margin: 0;
-    /*padding: 50px;*/
-    height: 300px;
-    width: 100%;
-}
-.headMatin{
-    background-image: url("../images/head/6.png");
-}
-.headMiMatin{
-    background-image: url("../images/head/10.png");
-}
-.headMidi{
-    background-image: url("../images/head/12.png");
-}
-.headAprem{
-    background-image: url("../images/head/15.png");
-}
-.headSoir{
-    background-image: url("../images/head/18.png");
-}
-.headNuit{
-    background-image: url("../images/head/20.png");
-}
-#horloge{
-    font-family: 'modern';
-    /*font-size: 2em;*/
-}
-
 .isn {
     background-color: rgba(255,255,255,0.7);
     border-radius: 20px;
@@ -64,13 +32,3 @@
     margin: 0 7% 0 7%;
     border-radius: 10px;
 }
-/*------------------------------police---------------------------*/
-@font-face{
-    font-family: 'modern';
-    src: url("../Fonts/Computerfont.ttf");
-}
-/*
-@font-face {
-    font-family: 'bugg';
-    src: url("../Fonts/PositiveSystem.otf");
-}*/
