@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset='utf-8'>
+	<title>Tracker Solaire</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/barre.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/design.css"/>
+
+</head>
+<body>
+	<div class="header">
+		<div id="fraise">
+		</div>
+	
+	</div>
+
+	<!---MENU -->
+	<center>
+	<ul class="menu">
+		<li class="menuContent"><a href="#presentation">Présentation</a></li>
+		<li class="menuContent"><a href="page1.html">Expérience</a></li>
+		<li class="menuContent"><a href="page2.html">Comparaison</a></li>
+		<li class="menuContent"><a href="page3.html">Synthèse</a></li>
+	</ul>
+	</center>
+
+	<article class="isn" id="presentation">
+		<p>Nous vous souhaitons la bienvenue sur notre site consacré à notre projet d'<abbr title="Informatique et sciences du numérique">ISN</abbr> !<br/>
+		Ce projet est la création d'un <b>tracker solaire</b>. Il a été réalisé par Léa JEAN, Adélaïde LOUIS et Yohann VERNHES, tous les trois élèves de TS4.</p>
+		<center><img class="nous" src="assets/images/lea.png"><img class="nous ade" src="assets/images/ade.png"><img class="nous yo" src="assets/images/yo.png"></center>
+	</article>
+	
+	<article class="presentation">
+		<center><h1>Présentation du projet</h1>
+		<h2><u>Pourquoi ce projet ?</u></h2></center>
+		<p>Nous avons choisi de réaliser un tracker solaire car c'est un projet idéal pour utiliser nos compétences acquises en Sciences de l'Ingénieur et celle en informatique. De plus faire un tracker solaire nous oblige à utiliser un arduino et donc d'apprendre un nouveau langage de programmation qui se rapproche du C. Nous aimons aussi les défis: réaliser un tracker solaire est loin d'être quelque chose de simple ! Mais ça nous le verrons plus tard...</p>
+		<center><h2><u>Analyse du besoin</u></h2></center>
+		<p>
+		Pour commencer nous avons réaliser une bête à corne - outil très utile dans les <b>Sciences de l'Ingénieur</b> - qui permet de savoir dans quel but l'objet est fabriqué.
+		<center><img src="assets/images/bac.jpg" title="Bête à corne du système" alt="bête à corne"></center><br/>
+		
+		<br/>
+		Ensuite, nous nous sommes intéressés à la trajectoire du soleil avant de réfléchir à des solutions techniques. 
+
+		Pour finir, nous avons pu dégager trois idées de méthodes pour réaliser le tracker. 
+		<ul>
+			<li> La première est de faire fonctionner le tracker en utilisant les équations de la trajectoire du Soleil.</li>
+			<li> La seconde est d'utiliser des photorésistances.</li>
+			<li> La dernière est d'utiliser une caméra.</li>
+		</ul>
+		Nous détaillons plus en détails ces méthodes sur la page <a href="page1.html">"Expérience".</a>
+
+		Nous avons commencé ensemble ce projet en réalisant 
+
+		</p>
+	</article>
+<!-- Reprendre texte de la diapo -->
+
+
+</body>
+<footer>	
+	<div>	
+		<div class="text">
+		    TS4 - ISN © 2018-2019 
+	    </div>
+	    <div class= "text">
+	    	|
+	    </div>
+		<div class= "text">
+	    	Léa JEAN 
+	    </div>
+	    <div class= "text">
+	    	|
+	    </div>
+	    <div class= "text">
+	    	<a href="https://lanryu.000webhostapp.com/">Adélaïde LOUIS</a>
+	    </div>
+	    <div class= "text">
+	    	|
+	    </div>
+	    <div class= "text">
+	    	<a href="https://lost-sh.000webhostapp.com/">Yohann VERNHES</a>
+	    </div>
+	    <div class= "text">
+	    	|
+	    </div>
+	    <div class= "text">
+	    	 <a style="color: black;text-decoration: none;" href="https://lyceeduruy.fr/">Lycée Victor Duruy</a>
+	    </div>
+	    <div class= "accueil">
+	    	<a style="color: black;text-decoration: none;" href="index.html">ACCUEIL</a>
+	 </div>
+</footer>
+<script type="text/javascript">
+//Horloge
+	/*heure();
+	function heure() {
+		var heure = Date();
+		var fenetre = document.getElementById('heure');
+		var heureFormatFr = heure[16]+heure[17]+heure[18]+heure[19]+heure[20];
+		fenetre.innerHTML=heureFormatFr;
+		setTimeout("heure()",1000);
+	}*/
+	function fraiseur(){ //Horloge dans le header
+		const deu = document.getElementById('fraise');
+		var touteLaDate = Date();//on recupere toute les info sur la date et l'heure
+		var deuheure = '';
+		for(var i=16; i<=23; i++){
+			deuheure+=touteLaDate[i];//on trie pour recupere que les heure min sec
+		}
+		deu.innerHTML='<center><p><b>'+deuheure+'</b></p></center>';
+		setTimeout("fraiseur()", 1000);
+	}
+	fraiseur();
+
+//Fond qui change selon l'heure qui fonctionne pas trop XD
+var myDate = new Date();
+var hours = myDate.getHours();
+
+if (6 <= hours && hours < 10) 
+{
+  document.body.className = 'matin';
+}
+else if (10 <= hours && hours < 12) 
+{
+ document.body.className = 'mimatin';
+}
+else if (12 <= hours && hours < 15) 
+{
+ document.body.className = 'midi';
+}
+else if (15 <= hours || hours < 18) 
+{
+ document.body.className = 'aprem';
+}
+else if (18 <= hours || hours < 20) 
+{
+ document.body.className = 'soir';
+}
+else if (20 >=  hours || hours > 6) 
+{
+ document.body.className = 'nuit';
+}
+</script>
+</html>

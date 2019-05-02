@@ -19,14 +19,25 @@ body{
 }
 
 h1{
-	font-size: 2em;
-    color: red;
+	font-size: 3em;
+  color: red;
 	text-shadow: pink 0.1em 0.1em 0.2em;
 }
 
 
 .btext img{
     width: 100px;
+}
+
+.contenuPage{
+  background-color: rgba(255,255,255,0.7);
+  padding: 2%;
+  color: black;
+  margin:2%;
+  /*Juste en attendant et pour que le footer reste bien en bas gentilment
+  *c'est la taille en y la hauteur du contenur qui fais 350px
+  */
+  height: 350px;
 }
 
 /*CHANGEMENT FOND <!--pas--> beau*/
@@ -102,7 +113,7 @@ h1{
 }
  */
 
-#methode1{
+#methode1, #methode2, #methode3{
   background-color: rgba(0, 0, 0, 0.5);
   bottom:0;
   display: none;
@@ -116,9 +127,16 @@ h1{
 
 }
 
-#methode1:target{
+#methode1:target, #methode2:target, #methode3:target{
   display: block;
   overflow-y: scroll;
+}
+
+.btnMethode{
+  position: relative;
+  display: inline-block;
+  background-color: blue;
+  padding: 0 13.5% 0 13.5%;/*ne pas suppr les val du padding elles sont galere a trouver*/
 }
 
 .popup_block{
@@ -138,7 +156,7 @@ img.bouton_fermer {
   margin: -70px -70px 0 0;
 }
 
-
+/*
 #selfe, #hack, #sol, #enigma, #inclinator{
   background-color: rgba(0, 0, 0, 0.5);
   bottom:0;
@@ -157,6 +175,7 @@ img.bouton_fermer {
   display: block;
   overflow-y: scroll;
 }
+*/
 .popup_block{
   background: #fff;
   border: 20px solid #ddd;
