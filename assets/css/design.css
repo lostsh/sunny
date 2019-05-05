@@ -40,79 +40,6 @@ h1{
   height: 350px;
 }
 
-/*CHANGEMENT FOND <!--pas--> beau*/
-
-/*
-.matin{
-    background-image: url("../images/fond/6.jpg");
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: auto;
-}
-
-.mimatin{
-    background-image: url("../images/fond/10.jpg");
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: auto;
-}
-.midi{
-    background-image: url("../images/fond/12.jpg");
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: auto;
-}
-.aprem{
-    background-image: url("../images/fond/15.jpg");
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: auto;
-}
-.soir{
-    background-image: url("../images/fond/18.jpg");
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: auto;
-}
-
-.nuit{
-    background-image: url("../images/fond/20.jpg");
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: auto;
-}
- */
-
 #methode1, #methode2, #methode3{
   background-color: rgba(0, 0, 0, 0.5);
   bottom:0;
@@ -135,8 +62,16 @@ h1{
 .btnMethode{
   position: relative;
   display: inline-block;
-  background-color: blue;
-  padding: 0 13.5% 0 13.5%;/*ne pas suppr les val du padding elles sont galere a trouver*/
+  text-decoration: none;
+  color: black;
+  padding: 1%;
+  border: 1px solid #33C1FF;
+  border-radius: 7px;
+  /*padding: 0 13.5% 0 13.5%;*//*ne pas suppr les val du padding elles sont galere a trouver*/
+  margin: 10%;
+}
+.btnMethode:hover{
+  border-width: 2px;
 }
 
 .popup_block{
@@ -156,26 +91,6 @@ img.bouton_fermer {
   margin: -70px -70px 0 0;
 }
 
-/*
-#selfe, #hack, #sol, #enigma, #inclinator{
-  background-color: rgba(0, 0, 0, 0.5);
-  bottom:0;
-  display: none;
-  float: left;
-  left:0;
-  overflow-y: scroll;
-  position: fixed;
-  right:0;
-  top:0;
-  z-index: 1000;
-
-}
-
-#selfe:target, #hack:target, #sol:target, #enigma:target, #inclinator:target{
-  display: block;
-  overflow-y: scroll;
-}
-*/
 .popup_block{
   background: #fff;
   border: 20px solid #ddd;
