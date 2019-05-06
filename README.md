@@ -38,10 +38,10 @@ The phisical part is composed of several parts too :
 # Things to do :
 - [ ] Change horloge font
 - [ ] Finish “expériences”
-- [ ] - décribe all the méthodes
+- [ ] - Déscribe all the méthodes
 - [ ] - Put img of the building of the system
 - [ ] Finish “comparaison”
-- [ ] -array to compare values of the first and the second methodes
+- [ ] - Array to compare values of the first and the second methodes
 - [ ] Finish “synthèse” => conclusion.html
 - [ ] - Que nous a apporté ce projet ?
 - [ ] - mettre nos synthèse perso (??)
