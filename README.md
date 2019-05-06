@@ -35,3 +35,19 @@ The phisical part is composed of several parts too :
 
 ##### Structure in cardboard to be lighter because the servomotors are only 9g ... (so painful)
 
+# Things to do :
+- [ ] Change horloge font
+- [ ] Finish “expériences”
+- [ ] - décribe all the méthodes
+- [ ] - Put img of the building of the system
+- [ ] Finish “comparaison”
+- [ ] -array to compare values of the first and the second methodes
+- [ ] Finish “synthèse” => conclusion.html
+- [ ] - Que nous a apporté ce projet ?
+- [ ] - mettre nos synthèse perso (??)
+
+- [ ] Finir la construction du tracker
+- [ ] *Comments the code*
+
+- [ ] Finir les synthèse personnelles ! (à imprimer ?? -> à demander)
+- [ ] **Faut-il faire en plus un diapo pour l’oral ? (à demander)**
