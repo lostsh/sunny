@@ -68,7 +68,7 @@ h1{
   border: 1px solid #33C1FF;
   border-radius: 7px;
   /*padding: 0 13.5% 0 13.5%;*//*ne pas suppr les val du padding elles sont galere a trouver*/
-  margin: 10%;
+  margin: 0 10% 0 10%;
 }
 .btnMethode:hover{
   border-width: 2px;

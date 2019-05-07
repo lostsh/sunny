@@ -1,0 +1,59 @@
+.isn {
+    background-color: white;
+    border-radius: 20px;
+    padding: 2%;
+    color: black;
+    margin:2%;
+    text-align: center;
+}
+
+
+
+.nous{
+    width: 1200px;
+}
+
+.presentation{
+    background-color: rgba(255,255,255,0.7);
+    padding: 2%;
+    color: black;
+    margin:2%;
+}
+
+.pagesMenu{
+    background-color: rebeccapurple;
+    margin: 0 0 0 50px;
+    padding: 1%;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 59%;/*100-(7*6)=58*/
+    /*margin-bottom: 50px;*/
+}
+.btn{
+    width: 150px;
+    height: 75px;
+    display: inline-block;
+    cursor: default;
+    margin: 0 7% 0 7%;
+    border-radius: 10px;
+}
+
+th{
+    border : 1px solid black;
+    padding: 30px 45px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.ligne_une{
+    background-color: rgba(255,255,245,0.9);
+    color: red;
+    font-size: 20px;
+}
+
+.ligne_deux{
+    background-color: rgba(255,255,150,0.7);
+}
