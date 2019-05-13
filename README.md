@@ -36,7 +36,7 @@ The phisical part is composed of several parts too :
 ##### Structure in cardboard to be lighter because the servomotors are only 9g ... (so painful)
 
 # Things to do :
-- [ ] Change horloge font
+- [x] Change horloge font
 - [ ] Finish “expériences”
 - [ ] - Déscribe all the méthodes
 - [ ] - Put img of the building of the system
