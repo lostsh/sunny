@@ -31,6 +31,7 @@ h1{
 
 .contenuPage{
   background-color: rgba(255,255,255,0.7);
+  border-radius: 20px;
   padding: 2%;
   color: black;
   margin:2%;
@@ -106,4 +107,23 @@ img.bouton_fermer {
 img.bouton_fermer {
   float: right;
   margin: -70px -70px 0 0;
+}
+
+th{
+    border : 1px solid black;
+    padding: 30px 45px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.ligne_une{
+    background-color: rgba(255,255,245,0.9);
+    color: red;
+    font-size: 20px;
+}
+
+.ligne_deux{
+    background-color: rgba(255,255,150,0.7);
 }

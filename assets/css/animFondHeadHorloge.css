@@ -31,7 +31,7 @@
     background-image: url("../images/head/20.png");
 }
 #horloge{
-    font-family: 'modern';
+    font-family: 'digits';
     font-size: 2em;
     position: absolute;
     top: 235px;
@@ -59,8 +59,8 @@
 }
 /*------------------------------police---------------------------*/
 @font-face{
-    font-family: 'modern';
-    src: url("../Fonts/Computerfont.ttf");
+    font-family: 'digits';
+    src: url("../Fonts/digital_display_tfb.ttf");
 }
 /*
 @font-face {
