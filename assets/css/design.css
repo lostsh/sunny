@@ -34,11 +34,11 @@ h1{
   border-radius: 20px;
   padding: 2%;
   color: black;
-  margin:2%;
+  margin: 2%;
   /*Juste en attendant et pour que le footer reste bien en bas gentilment
   *c'est la taille en y la hauteur du contenur qui fais 350px
   */
-  height: 350px;
+  min-height: 350px;
 }
 
 #methode1, #methode2, #methode3{
