@@ -66,13 +66,13 @@ h1{
   text-decoration: none;
   color: black;
   padding: 1%;
-  border: 1px solid #33C1FF;
-  border-radius: 7px;
+  border: 2px solid rgba(51, 193, 255, 0.4);
+  border-radius: 7px 5px;
   /*padding: 0 13.5% 0 13.5%;*//*ne pas suppr les val du padding elles sont galere a trouver*/
   margin: 0 10% 0 10%;
 }
 .btnMethode:hover{
-  border-width: 2px;
+  border: 2px solid rgba(0, 179, 255, 0.8);
 }
 
 .popup_block{
