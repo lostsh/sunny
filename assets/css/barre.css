@@ -22,13 +22,13 @@
     font-size: 30px;
 }
 
-.menu li a {    
+.menu li a {
     display: inline-block;
     color: black;
     text-align: center;
     padding: 12px 14px;
     text-decoration: none;
-    cursor: default;    
+    cursor: default;
 }
 
 .menu li i {
@@ -70,4 +70,3 @@ footer div {
      float: right;
      padding-top: 7px;
 }
-

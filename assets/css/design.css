@@ -43,15 +43,15 @@ h1{
 
 #methode1, #methode2, #methode3{
   background-color: rgba(0, 0, 0, 0.5);
-  bottom:0;
+  bottom: 0;
   display: none;
   float: left;
-  left:0;
+  left: 0;
   overflow-y: scroll;
   position: fixed;
-  right:0;
-  top:0;
-  z-index: 1000;
+  right: 0;
+  top: 0;
+  z-index: 10;
 
 }
 
@@ -125,5 +125,5 @@ table{
 }
 
 .ligne_deux{
-    background-color: rgba(255,255,150,0.7);
+    background-color: #C6C6C6;
 }

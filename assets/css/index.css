@@ -3,11 +3,17 @@
     border-radius: 20px;
     padding: 2%;
     color: black;
-    margin:2%;
+    margin: 2%;
     text-align: center;
 }
 .nous{
-    width: 1200px;
+    width: 450px;
+}
+.ade{
+    width: 545px;
+}
+.yo{
+    width: 425px;
 }
 
 .presentation{
@@ -15,7 +21,7 @@
     border-radius: 20px;
     padding: 2%;
     color: black;
-    margin:2%;
+    margin: 2%;
 }
 
 .pagesMenu{

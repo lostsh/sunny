@@ -13,6 +13,7 @@
 	<div id="horloge"></div>
 
 	<!---MENU -->
+
 	<center>
 	<ul class="menu">
 		<li class="menuContent"><a href="index.html#presentation">Présentation</a></li>
@@ -22,12 +23,14 @@
 	</ul>
 	</center>
 
-	<!--FENETRES MODALES-->
-	<!--================BOUTONS POUR OUVIRIR LES FENETRES===================-->
+	<!--TEXTE-->
+
 	<div class="contenuPage">
-		<h1>Comment optimiser la position d'un panneau solaire avec un rendement convenable sachant que le soleil se déplace ?</h1>
+		<marquee truespeed scrolldelay="50" behavior="alternate"><h1>Comment optimiser la position d'un panneau solaire avec un rendement convenable sachant que le soleil se déplace ?</h1></marquee>
 		<p>Pour répondre à cette question, nous avons réfléchi à trois méthodes différentes.</p>
+		<br>
 		<center>
+			<!--FENETRES MODALES-->
 			<!--Bouton pour ouvir la fenetre-->
 			<a class="btnMethode" href="#methode1">Méthode 1</a>
 			<!--Bouton pour ouvir la fenetre-->
@@ -35,10 +38,25 @@
 			<!--Bouton pour ouvir la fenetre-->
 			<a class="btnMethode" href="#methode3">Méthode 3</a>
 		</center>
-	</div>
+		<!---ARDUINO -->
+		<h2>Comment fonctionne un arduino ?</h2>
+		<center><img src="assets/images/photoresistance/arduino.jpg" title="Arduino Uno" alt="arduino"></center>
+		<!---APPLICATION-->
+		<h2>Application du tracker solaire</h2>
+		<p>
+			Pour savoir comment se comporte le tracker solaire à distance, nous avons réaliser une application mobile.
+			<br/>
+			Etant donné que ceci ne faisait pas parti du projet initial: cette application est donc un bonus, et donc pas notre priorité. Nous avons donc fait une application simpliste à l'aide d'<abbr title="Pas beau">App Inventor.</abbr>
+			<br/>
+			<center>
+				<img src="assets/images/appli/1.JPG" title="Simulation page 1" alt="application">
+				<img src="assets/images/appli/2.JPG" title="Simulation page 2" alt="application">
+			</center>
+		</p>
 
+	</div><!--fin class="contenuPage"-->
 
-	<!--=======================-CONTENU FENETRES ET FENETRES-========================-->
+	<!--CONTENU FENETRES-->
 
 	<div class="conteuneurFenetres">
 		<!--Premier bouton-->
@@ -50,41 +68,51 @@
 							<a class="fermer" href="#noWhere"><img alt="Fermer" title="Fermer la fenêtre" class="bouton_fermer" src="assets/images/close.png"></a>
 							<p>
 
-								<!--contenu textuel de la fenetre-->
+								<!--texte de la fenetre-->
 								<center><h1>Système avec des photorésistances</h1></center>
 								<div>
 									<h2>Explication de la méthode</h2>
 									<p>
-										Ici, l'explication du principe de la méthode.
+
+										Cette méthode consiste à équiper le système de photorésistances. <br/>
+										Pour suivre les positions du soleil, le principe de cette méthode peut être assimilé à celui d’un cadran solaire : une pièce projette son ombre sur une plaque équipée de photorésistances permettant de comparer les valeurs d’intensité lumineuse reçues pour savoir où se trouve l’ombre.
+
+										<h3>Comment fonctionne une photorésistance ?</h3>
+										<img src="assets/images/photoresistance/photoresistance.png" title="Image photoresistance" alt="photoresistance">
+
 									</p>
 								</div>
 								<div>
 									<h2>Programme</h2>
 									<p>
 										Ici, le code utilisé pour faire fonctionner le système --> théorie
+										<!--- METTRE PROGRAMME -->
 									</p>
 								</div>
 								<div>
 									<h2>Expérimentation</h2>
 									<p>
-										Ici, le détail de l'expérimentation, img et résultats.
+										Pour tester ce programme, nous avons construit un tracker solaire avec du carton. Il a fallu tout d'abord imaginer le système.<br/>
+										<!-- CROQUIS -->
+										Ensuite nous l'avons réalisé.<br/>
+										<!--PHOTO DE L EVOLUTION-->
+										Nous avons apporté une modification à ce système: pouvoir connaître l'intensité maximale pour que le tracker solaire puisse être le plus optimale possible.<br/>
+										<!---GRAPHIQUE + ECRAN LCD -->
 									</p>
 								</div>
 
 								<div>
-									<h2>Conclusion</h2>
-									<p>
-										Ici, la conclusion de la méthode.
-									</p>
 
-										<center><!---TABLEAU AVEC avatages / inconvénients -->
+									<h2>Conclusion</h2>
+										<center>
+											<!---TABLEAU AVEC avatages / inconvénients -->
 											<table>
 												<tr class="ligne_une">
 		 											<th>Avantages</th>
 									 				<th>Inconvénients</th>
 									 			</tr>
 									 			<tr class="ligne_deux">
-									 				<th>Méthode simple, pas besoin d'utiliser de GPS pour la localisation du système, pas cher
+													<th>Méthode simple, pas besoin d'utiliser de GPS pour la localisation du système, pas cher
 									 				</th>
 									 				<th>
 									 					Si la luminosité est trop basse (trop sombre), le système est inopérant
@@ -101,6 +129,7 @@
 				</section>
 			</div>
 		</div><!--cette div est la fermeture du premier contenur de la premere fenetre-->
+
 		<!--second bouton-->
 		<div>
 			<div class="bouton">
@@ -109,35 +138,36 @@
 						<div class="popup_block">
 							<a class="fermer" href="#noWhere"><img alt="Fermer" title="Fermer la fenêtre" class="bouton_fermer" src="assets/images/close.png"></a>
 							<p>
-
-								<!--contenu textuel de la fenetre-->
+								<!--texte de la fenetre-->
 								<center><h1>Système avec équation de la trajectoire du Soleil</h1></center>
 								<div>
 									<h2>Explication de la méthode</h2>
 									<p>
-										Ici, l'explication du principe de la méthode.
+										Cette méthode consiste à équiper le système d’un GPS (Global Positioning System). <br/>
+										Pour suivre les positions du soleil, le système s’appuie sur un algorithme qui calcule la position du soleil en fonction de son positionnement spatial et temporel.
+										<br/>
+										Avant de programmer, il fallait qu'on trouve les équations de la trajectoire du soleil en fonction du temps. On a donc cherché cette information sur Internet. Or, nous avons voulu mieux comprendre ces formules. Pour cela on s'est aidé de cours de Mathématiques sur les coordonnées sphériques mais aussi d'animation Geogebra (<a href="https://cral.univ-lyon1.fr/labo/fc/Ateliers_archives/ateliers_2012-13/documents_20120919.html">Exemple</a>).
+										<br/>
+										<center>
+											<img src="assets/images/equation/schema.JPG" title="coordonnées sphériques" alt="schema" WIDTH="300">
+											<img src="assets/images/equation/schema2.jpg" title="trajectoire du soleil" alt="schema" WIDTH="300">
+											<img src="assets/images/equation/schema3.PNG" title=" schéma trajectoire du soleil" alt="schema" WIDTH="300">
+										</center>
 									</p>
 								</div>
+
 								<div>
 									<h2>Programme</h2>
 									<p>
 										Ici, le code utilisé pour faire fonctionner le système --> théorie
-									</p>
-								</div>
-								<div>
-									<h2>Expérimentation</h2>
-									<p>
-										Ici, le détail de l'expérimentation, img et résultats.
+										<!--- METTRE PROGRAMME -->
 									</p>
 								</div>
 
 								<div>
 									<h2>Conclusion</h2>
-									<p>
-										Ici, la conclusion de la méthode.
-									</p>
-
-									<center><!---TABLEAU AVEC avatages / inconvénients -->
+									<center>
+										<!---TABLEAU AVEC avantages / inconvénients -->
 										<table>
 				 							<tr class="ligne_une">
 	 											<th>Avantages</th>
@@ -145,15 +175,15 @@
 								 			</tr>
 								 			<tr class="ligne_deux">
 								 				<th>
-								 					Permet d'avoir les coordonées de la position du système ainsi que la date, est plus précis car ce système à accès au ciel, fonctionne même si le soleil n'est pas visible et quelque soit la météo.
+								 					Permet d'avoir les coordonnées de la position du système ainsi que la date, est plus précis car ce système à accès au ciel, fonctionne même si le soleil n'est pas visible et quelque soit la météo.
 								 				</th>
 								 				<th>
-
+								 					Il faut avoir des coordonées précises. (nécessite un GPS par exemple).
 												</th>
 								 			</tr>
 								 		</table>
-									</center>
 
+									</center>
 								</div>
 
 							</p>
@@ -170,35 +200,23 @@
 						<div class="popup_block">
 							<a class="fermer" href="#noWhere"><img alt="Fermer" title="Fermer la fenêtre" class="bouton_fermer" src="assets/images/close.png"></a>
 							<p>
-
-								<!--contenu textuel de la fenetre-->
+								<!--texte de la fenetre-->
 								<center><h1>Système avec une caméra</h1></center>
 								<div>
-									<h1>Explication de la méthode</h1>
+									<h2>Explication de la méthode</h2>
 									<p>
-										Ici, l'explication du principe de la méthode.
-									</p>
-								</div>
-								<div>
-									<h2>Programme</h2>
-									<p>
-										Ici, le code utilisé pour faire fonctionner le système --> théorie
-									</p>
-								</div>
-								<div>
-									<h2>Expérimentation</h2>
-									<p>
-										Ici, le détail de l'expérimentation, img et résultats.
+										Cette méthode consiste à équiper le système d'une caméra qui serait orientée vers le ciel. Pour savoir où est le soleil, il suffit de faire en sorte que le point le plus lumineux que la caméra voit, soit toujours au centre.
 									</p>
 								</div>
 
 								<div>
 									<h2>Conclusion</h2>
 									<p>
-										Ici, la conclusion de la méthode.
+										Malheuresement par faute de temps, nous n'avons pas pu élaborer cette méthode...
 									</p>
 
-									<center><!---TABLEAU AVEC avatages / inconvénients -->
+									<center>
+										<!---TABLEAU AVEC avatages / inconvénients -->
 										<table>
 				 							<tr class="ligne_une">
 	 											<th>Avantages</th>
@@ -226,38 +244,39 @@
 	</div>
 
 </body>
-<footer>
+<footer><!---====FOOTER====-->
 	<div>
-		<div class="text">
+			<div class="text">
 		    TS4 - ISN © 2018-2019
 	    </div>
 	    <div class= "text">
 	    	|
 	    </div>
-			<div style="color:blue;text-decoration:underline;" class="text">
-	    	Léa JEAN
+			<div class="text">
+	    	<a href="hidden.html">Léa JEAN</a>
 	    </div>
-	    <div class= "text">
+	    <div class="text">
 	    	|
 	    </div>
-	    <div class= "text">
+	    <div class="text">
 	    	<a href="https://lanryu.000webhostapp.com/">Adélaïde LOUIS</a>
 	    </div>
-	    <div class= "text">
+	    <div class="text">
 	    	|
 	    </div>
-	    <div class= "text">
+	    <div class="text">
 	    	<a href="https://lost-sh.000webhostapp.com/">Yohann VERNHES</a>
 	    </div>
-	    <div class= "text">
+	    <div class="text">
 	    	|
 	    </div>
-	    <div class= "text">
+	    <div class="text">
 	    	 <a style="color: black;text-decoration: none;" href="https://lyceeduruy.fr/">Lycée Victor Duruy</a>
 	    </div>
-	    <div class= "accueil">
+	    <div class="accueil">
 	    	<a style="color: black;text-decoration: none;" href="index.html">ACCUEIL</a>
-	 </div>
+			</div>
+	</div>
 </footer>
 <script type="text/javascript" src="assets/js/anim-fondHead.js"></script>
 </html>
