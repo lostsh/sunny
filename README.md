@@ -55,8 +55,7 @@ The phisical part is composed of several parts too :
 - [ ] **Faut-il faire en plus un diapo pour l’oral ? (à demander)**
 
 
-/////////////
-| Site | Physical part
+///////////// | Site | Physical part
 ------------- | ------------- | --------------
 V1.0 |  |
 V2.1 |  |
