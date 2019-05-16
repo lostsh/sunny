@@ -1,6 +1,8 @@
 # Solar Tracker
 #### A solar panel who follow the sun
 
+![First version](/assets/images/diapo/tracker.jpg)
+
 *sunny is the name of the sensor composed of four photoresistors*
 
 - [x] Group Project
@@ -37,17 +39,24 @@ The phisical part is composed of several parts too :
 
 # Things to do :
 - [x] Change horloge font
-- [ ] Finish “expériences”
-- [ ] - Déscribe all the méthodes
-- [ ] - Put img of the building of the system
-- [ ] Finish “comparaison”
-- [ ] - Array to compare values of the first and the second methodes
-- [ ] Finish “synthèse” => conclusion.html
+- [ ] ~~Finish “expériences”~~ **canceled**
+- [x] - Déscribe all the méthodes
+- [ ] - Put img of the building of the system **WIP**
+- [ ] ~~Finish “comparaison”~~ **canceled**
+- [ ] - ~~Array to compare values of the first and the second methodes~~ **canceled**
+- [x] Finish “synthèse” => conclusion.html
 - [ ] - Que nous a apporté ce projet ?
 - [ ] - mettre nos synthèse perso (??)
 
 - [ ] Finir la construction du tracker
-- [ ] *Comments the code*
+- [x] *Comments the code*
 
 - [ ] Finir les synthèse personnelles ! (à imprimer ?? -> à demander)
 - [ ] **Faut-il faire en plus un diapo pour l’oral ? (à demander)**
+
+
+/////////////
+| Site | Physical part
+------------- | ------------- | --------------
+V1.0 |  |
+V2.1 |  |
