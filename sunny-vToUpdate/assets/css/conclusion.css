@@ -1,0 +1,28 @@
+article{
+	background-color : #E46B2F;
+	border-radius : 10px 10px;
+	border-style : solid;
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-bottom : 10px;
+}
+h1{
+	background-color : white;
+	border : 2px solid black;
+	border-radius : 10px 10px;
+	text-align : center;
+}
+table{
+	border-radius : 10px 10px;
+	border-style : solid;
+}
+th{
+	border-style : solid;
+	padding-left : 10px;
+	padding-right : 10px;
+}
+td{
+	border-style : solid;
+	padding-left : 10px;
+	padding-right : 10px;
+}

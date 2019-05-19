@@ -1,0 +1,129 @@
+body{
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: auto;
+}
+
+.txt{
+	color: black;
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    width: 100%;
+    line-height: 1em;
+}
+
+h1{
+	font-size: 3em;
+  color: red;
+	text-shadow: pink 0.1em 0.1em 0.2em;
+}
+
+
+.btext img{
+    width: 100px;
+}
+
+.contenuPage{
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 20px;
+  padding: 2%;
+  color: black;
+  margin: 2%;
+  /*Juste en attendant et pour que le footer reste bien en bas gentilment
+  *c'est la taille en y la hauteur du contenur qui fais 350px
+  */
+  min-height: 350px;
+}
+
+#methode1, #methode2, #methode3{
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  display: none;
+  float: left;
+  left: 0;
+  overflow-y: scroll;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+
+}
+
+#methode1:target, #methode2:target, #methode3:target{
+  display: block;
+  overflow-y: scroll;
+}
+
+.btnMethode{
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 1%;
+  border: 2px solid rgba(51, 193, 255, 0.4);
+  border-radius: 7px 5px;
+  /*padding: 0 13.5% 0 13.5%;*//*ne pas suppr les val du padding elles sont galere a trouver*/
+  margin: 0 10% 0 10%;
+}
+.btnMethode:hover{
+  border: 2px solid rgba(0, 179, 255, 0.8);
+}
+
+.popup_block{
+  background: #fff;
+  border: 20px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px #B3CAD3;
+  margin: 10% auto;
+  padding: 20px;
+  position: relative;
+  text-align: justify;
+  width: 80%;
+}
+
+img.bouton_fermer {
+  float: right;
+  margin: -70px -70px 0 0;
+}
+
+.popup_block{
+  background: #fff;
+  border: 20px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px #B3CAD3;
+  margin: 10% auto;
+  padding: 20px;
+  position: relative;
+  text-align: justify;
+  width: 80%;
+}
+
+img.bouton_fermer {
+  float: right;
+  margin: -70px -70px 0 0;
+}
+
+th{
+    border : 1px solid black;
+    padding: 30px 45px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.ligne_une{
+    background-color: rgba(255,255,245,0.9);
+    color: red;
+    font-size: 20px;
+}
+
+.ligne_deux{
+    background-color: #C6C6C6;
+}

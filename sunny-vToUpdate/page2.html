@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="FR">
+<head>
+	<meta charset='utf-8'>
+	<title>Tracker Solaire</title>
+	<link rel="icon" href="assets/images/logo.ico"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/barre.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/design.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/animFondHeadHorloge.css"/>
+</head>
+<body>
+	<div id="header"></div>
+	<div id="horloge"></div>
+
+	<!---MENU -->
+	<center>
+	<ul class="menu">
+		<li class="menuContent"><a href="index.html#presentation">Présentation</a></li>
+		<li class="menuContent"><a href="page1.html">Expérience</a></li>
+		<li class="menuContent"><a href="page2.html">Galerie</a></li>
+		<li class="menuContent"><a href="conclusion.html">Synthèse</a></li>
+	</ul>
+	</center>
+
+	<!--TEXTE-->
+	<div class="contenuPage">
+	    <center><h1>Galerie</h1></center>
+		<p class="p3">
+			Pour réaliser ce projet, nous avons fait plusieurs dessins pour illustrer nos propros.
+			<center>
+				<!--FENETRES MODALES-->
+				<!--================BOUTONS POUR OUVIRIR LES FENETRES===================-->
+				<!--Bouton pour ouvrir la fenetre 1-->
+				<a class="btnMethode" href="#methode1">Evolution du Tracker Solaire</a>
+				<!--Bouton pour ouvir la fenetre 2-->
+				<a class="btnMethode" href="#methode2">Galerie des images du site</a>
+				<!--==============FIN BOUTONS POUR OUVIRIR LES FENETRES=================-->
+			</center>
+		</p>
+	</div>
+
+	<div class="conteuneurFenetres">
+		<!-- ===== Premier bouton ===== -->
+		<div>
+			<div class="bouton">
+				<section class="click">
+					<div id="methode1">
+						<div class="popup_block">
+							<a class="fermer" href="#noWhere"><img alt="Fermer" title="Fermer la fenêtre" class="bouton_fermer" src="assets/images/close.png"></a>
+							<!---FAIRE UN DIAPO AVEC LES EVOLUTIONS DU TRACkER	CROQUIS DESSIN  PHOTOS EVOLUTIFS DU TRACKER-->
+							<center><div id="img_diapo_box"></div><div id="txt_diapo_box"></div></center>
+							<center>
+								<figure>
+										<figcaption>Croquis du tracker solaire</figcaption>	
+										<img src="assets/images/diapo/idee.jpg" width="700" />
+										<figcaption>Avancée du tracker solaire (modèle réel)</figcaption>						
+										<img src="assets/images/diapo/reel.jpg" width="500"/>
+										<figcaption>Modèle final (unidirectionnel)</figcaption>	
+										<img src="assets/images/diapo/reel.jpg" width="500"/>								
+								</figure>
+							</center>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div><!--fermeture contenu de la premere fenetre-->
+
+		<!-- ===== Second bouton ===== -->
+		<div>
+			<section class="click">
+				<div id="methode2">
+					<div class="popup_block">
+
+						<a class="fermer" href="#noWhere"><img alt="Fermer" title="Fermer la fenêtre" class="bouton_fermer" src="assets/images/close.png"></a>
+						<!---FAIRE UN DIAPO AVEC LES DESSINS DU SITE HEAD FOND TRIO ANIMATION -->
+						<center>
+							<div id="img_diapo_box_2"></div>
+							<div id="txt_diapo_box_2"></div>
+						</center>
+
+					</div>
+				</div>
+			</section>
+		</div><!--fermeture contenu de la seconde fenetre-->
+
+	</div><!--fin class="conteuneurFenetres"-->
+</body>
+<footer><!---====FOOTER====-->
+	<div>
+		<div class="text">
+		    TS4 - ISN © 2018-2019
+	    </div>
+	    <div class= "text">
+	    	|
+	    </div>
+			<div class="text">
+	    	<a href="hidden.html">Léa JEAN</a>
+	    </div>
+	    <div class="text">
+	    	|
+	    </div>
+	    <div class="text">
+	    	<a href="https://lanryu.000webhostapp.com/">Adélaïde LOUIS</a>
+	    </div>
+	    <div class="text">
+	    	|
+	    </div>
+	    <div class="text">
+	    	<a href="https://lost-sh.000webhostapp.com/">Yohann VERNHES</a>
+	    </div>
+	    <div class="text">
+	    	|
+	    </div>
+	    <div class="text">
+	    	 <a style="color: black;text-decoration: none;" href="https://lyceeduruy.fr/">Lycée Victor Duruy</a>
+	    </div>
+	    <div class="accueil">
+	    	<a style="color: black;text-decoration: none;" href="index.html">ACCUEIL</a>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript" src="assets/js/anim-fondHead.js"></script>
+<script type="text/javascript">
+
+/*==== DIAPORAMA NUMERO 2 ====*/
+img = new Array;
+img[0] = 'assets/images/sky.gif';
+img[1] = 'assets/images/soleil.gif';
+img[2] = 'assets/images/trio.png';
+img[3] = 'assets/images/site.gif';
+
+txt_ = new Array;
+txt_[0] = "Gif avec les différents fonds du site qui changent en fonction de l'heure. Réalisés par Adélaïde LOUIS.";
+txt_[1] = "Gif des différentes positions du soleil du HEAD qui changent en fonction de l'heure. Réalisés par Adélaïde LOUIS";
+txt_[2] = "Photo de famille ;) ! Photographe : Adélaïde LOUIS (encore)";
+txt_[3] = "Animation du site selon l'heure";
+
+function ejs_aff_image(num) {
+	var nbImg = img.length -1;
+	if(document.getElementById) {
+		ejs_fin = "<br>";
+		if(num!=0)
+			ejs_fin += "<a href='#' onclick='ejs_aff_image("+(num-1)+");return(false)' " +
+					"style='text-decoration: none;background-color: rgba(0,0,255,0.3);padding: 7px 12px;border-radius: 8px;border: 2px solid rgba(0,0,255,0.5);'>< Précédent</a>";
+		if(num!=nbImg)
+			ejs_fin += "<a>		</a><a href='#' onclick='ejs_aff_image("+(num+1)+");return(false)' " +
+								"style='text-decoration: none;background-color: rgba(0,0,255,0.3);padding: 7px 12px;border-radius: 8px;border: 2px solid rgba(0,0,255,0.5);'>Suivant ></a>";
+		document.getElementById("img_diapo_box_2").innerHTML = "<center><img " +
+						"style='height: 250px;margin-top: 3%;border-radius: 5px;' src='"+img[num]+"' border=0><br>"+ejs_fin+"</center>";
+		document.getElementById("txt_diapo_box_2").innerHTML = "<center>"+ "<p style='margin-top: 1%'>"+ txt_[num]+"</p></center>";
+		}
+}
+window.onload = new Function("ejs_aff_image(0)");
+
+</script>
+</html>
