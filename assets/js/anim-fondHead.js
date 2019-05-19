@@ -8,10 +8,10 @@
 //Horloge
 function horloge(){ //Horloge dans le header
   const champAfficheur = document.getElementById('horloge');
-  var touteLaDate = Date();//on recupere toute les info sur la date et l'heure
-  var HeureMinutesSecondes = '';//variable string qui contiend la date et l'heure
+  var touteLaDate = Date();//on recupere toute les informations sur la date et l'heure
+  var HeureMinutesSecondes = '';//variable string qui contient la date et l'heure
   for(var i=16; i<=23; i++){
-    HeureMinutesSecondes+=touteLaDate[i];//on trie pour recupere que les heure min sec
+    HeureMinutesSecondes+=touteLaDate[i];//on trie pour recuperer que les heures minutes secondes
   }
   champAfficheur.innerHTML='<p><b>'+HeureMinutesSecondes+'</b></p>';
 
@@ -19,23 +19,21 @@ function horloge(){ //Horloge dans le header
 }
 horloge();
 
-//Fond qui change selon l'heure qui fonctionne <!--pas--> trop XD
-
+//Fond qui change selon l'heure
 function changerFond(){
   const elementBody = document.body;
   const elementHead = document.getElementById('header');
   var heure = '';
-  heure = Date()[16]+Date()[17];//on recupere seulement les deux chiffres de heure
-  //heure = Date()[22]+Date()[23];//on recupere seulement les secondes pour tester
+  heure = Date()[16]+Date()[17];//on recupere seulement les deux chiffres des heures
   setTimeout("changerFond()", 120000);
-  //la function est actualise toutes les deux minutes
-  //donc au maximum on aura deux minutes de retard sur les tranasiosn
+  //la fonction est actualisee toutes les deux minutes
+  //donc au maximum on aura deux minutes de retard sur les transitions
 
-  //utilisation preferentielle du if a la place du switch pour des raisons de comparaisons evidentes
-  if( 6 <= heure && heure < 10 ){
-    elementBody.className = 'matin';
-    elementHead.className = 'headMatin';
-  }else if ( 10 <= heure && heure < 12 ){
+  //Changement des images
+  if( 6 <= heure && heure < 9 ){
+    elementBody.className = 'matin'; // background
+    elementHead.className = 'headMatin'; //dessin soleil
+  }else if ( 9 <= heure && heure < 12 ){
     elementBody.className = 'mimatin';
     elementHead.className = 'headMiMatin';
   }else if ( 12 <= heure && heure < 15 ){
